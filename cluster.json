@@ -1,0 +1,45 @@
+{
+    "__default__" :
+    {
+        "t" : "35:00:00",
+        "N" : 1,
+        "partition" : "exacloud",
+        "J" : "{rule}.{wildcards}",
+        "o" : "logs/__default__/{rule}_%j.out",
+        "e" : "logs/__default__/{rule}_%j.err",
+        "c" : 4,
+        "mem" : 45000
+    },
+    "chr_fasta" :
+    {
+        "J" : "chr_fasta",
+        "e" : "logs/chr_fasta/chr_fasta_%j.err",
+        "o" : "logs/chr_fasta/chr_fasta_%j.out",
+        "c" : 1,
+        "mem" : 20000
+    },
+    "rep_par" :
+    {
+        "J" : "rep_par",
+        "e" : "logs/rep_par/rep_par_%j.err",
+        "o" : "logs/rep_par/rep_par_%j.out",
+        "c" : 1,
+        "mem" : 20000
+    },
+    "simulate" :
+    {
+        "J" : "simulate",
+        "e" : "logs/simulate/simulate_%j.err",
+        "o" : "logs/simulate/simulate_%j.out",
+        "c" : 1,
+        "mem" : 100000
+    },
+    "split_reads" :
+    {
+        "J" : "split_reads",
+        "e" : "logs/split_reads/split_reads_%j.err",
+        "o" : "logs/split_reads/split_reads_%j.out",
+        "c" : 1,
+        "mem" : 20000
+    }
+}
