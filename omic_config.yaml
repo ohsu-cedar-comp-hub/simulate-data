@@ -1,0 +1,6 @@
+fasta:
+  /home/groups/CEDAR/anno/fasta_filt/hg38_filtered.fa
+gtf:
+  /home/groups/CEDAR/anno/gtf/hg38_rmsk_TE_filt.gtf
+n_rep:
+  6
